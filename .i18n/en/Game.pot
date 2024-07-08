@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Jul  8 20:03:16 2024\n"
+"POT-Creation-Date: Mon Jul  8 21:43:42 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -54,28 +54,97 @@ msgstr ""
 msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
 msgstr ""
 
-#: Game
-msgid "Hello World Game"
+#: Game.Levels.Equations.L01_Rfl
+msgid "Reflexivity"
 msgstr ""
 
-#: Game
-msgid "This text appears on the starting page where one selects the world/level to play.\n"
-"You can use markdown."
-msgstr ""
-
-#: Game
-msgid "Here you can put additional information about the game. It is accessible\n"
-"from the starting through the drop-down menu.\n"
+#: Game.Levels.Equations.L01_Rfl
+msgid "The `rfl` principle (short for reflexivity) can be used to prove any statement of the form\n"
+"`?X = ?X`. Here, I use `?X` to stand in for any expression of any type.\n"
+"It could be `8 + 9` or `a * b` or `\"adele\"` or whatever.\n"
 "\n"
-"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
+"Below, you are asked to prove `x + y = x + y`, where `x` and `y` are natural numbers.\n"
+"The word `sorry` between the `begin` and `end` lines below asks Lean not to give an error message if a\n"
+"proof isn't complete. You'll see a <span style=\"color:orange\">warning</span> message in the\n"
+"bottom-right hand pane. This indicates you shouldn't trust the proof just yet, as it uses `sorry`!\n"
 "\n"
-"Use markdown."
+"Delete `sorry` (using the backspace key on your keyboard). In the right-hand pane you'll see:\n"
+"```\n"
+"x y : ℕ\n"
+"⊢ x + y = x + y\n"
+"```\n"
+"\n"
+"Here, `x y : ℕ` is the *context*, the set of things you know. In this case, you know `x` and `y`\n"
+"are natural numbers.\n"
+"\n"
+"The *target* is `⊢ x + y = x + y`. The `⊢` symbol can be read 'to prove'. So your target is\n"
+"to prove `x + y = x + y`.\n"
+"\n"
+"The bottom part of the right-hand pane shows an <span style=\"color:red\">error</span>  message:\n"
+"tactic failed, there are unsolved goals. Don't panic! It's just telling you that you haven't yet\n"
+"proved the result.\n"
+"\n"
+"Your task is to replace `sorry` with `from rfl,`. Note the comma at the end of the line!\n"
+"If you're successful, Lean will respond with the message `no goals` or `Proof complete!`\n"
+"\n"
+"In `from rfl`, the word `from` is a *tactic*. This tactic takes a proof term and closes a goal\n"
+"if the provided proof term exactly matches the target. The list of tactics you've seen so far\n"
+"is presented in the left-hand pane."
+msgstr ""
+
+#: Game.Levels.Equations.L01_Rfl
+msgid "You can either start using `«{h}»` or `«{g}»`."
+msgstr ""
+
+#: Game.Levels.Equations.L01_Rfl
+msgid "You should use `«{h}»` now."
+msgstr ""
+
+#: Game.Levels.Equations.L01_Rfl
+msgid "You should use `«{g}»` now."
+msgstr ""
+
+#: Game.Levels.Equations.L01_Rfl
+msgid "This last message appears if the level is solved."
+msgstr ""
+
+#: Game.Levels.Equations
+msgid "Equations World"
+msgstr ""
+
+#: Game.Levels.Equations
+msgid "This world introduces the concept of equality"
 msgstr ""
 
 #: Game
-msgid "Game Template"
+msgid "Modern Mathematics Game"
 msgstr ""
 
 #: Game
-msgid "You should use this game as a template for your own game and add your own levels."
+msgid "This is an interactive book aimed at beginning mathematics undergraduates. You'll learn to prove\n"
+"theorems online using a computer tool called Lean.\n"
+"\n"
+"Each chapter is represented by a coloured circular button in the right-hand pane. Blue indicates your\n"
+"current position, green is for completed chapters, and grey is for unread or incomplete chapters.\n"
+"\n"
+"At every stage in a proof, there is a *target*, the thing you want to prove, and a *context*, the\n"
+"set of things you have already proved or assumed at the beginning of your argument.\n"
+"The target and context change through the proof.\n"
+"\n"
+"The word *goal* is used to refer variously to the target or to the combination of target and context.\n"
+"\n"
+"You'll use *tactics* to modify the goal until you have proved the target (called 'closing the goal').\n"
+"Each tactic may invoke one or more *theorems*."
+msgstr ""
+
+#: Game
+msgid "This game is part of the [exlean](https://exlean.org/) project."
+msgstr ""
+
+#: Game
+msgid "Modern Maths Game"
+msgstr ""
+
+#: Game
+msgid "Modern Mathematics Game"
 msgstr ""
