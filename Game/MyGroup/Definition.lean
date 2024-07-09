@@ -9,6 +9,7 @@ class Group (G : Type u) extends One G, Mul G, Inv G where
   mul_left_inv : ∀ a : G, a⁻¹ * a = 1
   one_mul : ∀ (a : G), 1 * a = a
   mul_one : ∀ (a : G), a * 1 = a
+  mul_right_inv : ∀ b : G, b * b⁻¹ = 1
 
 
 end MyGroup

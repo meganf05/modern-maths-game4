@@ -35,7 +35,8 @@ Statement (a b : G) : (a⁻¹ * (b⁻¹ * b)) * a = 1 := by
   rw [mul_left_inv]
 
 Conclusion "
-Excellent. You've now seen all the defining properties of a group.
+Great, you've just used the left multiplicative inverse. We'll learn the left multiplicative inverse
+in the next level.
 Click \"Leave World\" below to leave the Group Definition world and move on to the
 next world.
 "

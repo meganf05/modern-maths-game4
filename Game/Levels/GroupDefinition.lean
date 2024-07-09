@@ -3,6 +3,7 @@ import Game.Levels.GroupDefinition.L01_mul_one
 import Game.Levels.GroupDefinition.L02_one_mul
 import Game.Levels.GroupDefinition.L03_mul_assoc
 import Game.Levels.GroupDefinition.L04_mul_left_inv
+import Game.Levels.GroupDefinition.L05_mul_right_inv
 
 World "GroupDefinition"
 Title "Group Definition"
