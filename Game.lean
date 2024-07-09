@@ -1,5 +1,5 @@
-import Game.Levels.DemoWorld
-import Game.Levels.Equations
+import Game.Levels.GroupDefinition
+import Game.Levels.Basics
 
 -- Here's what we'll put on the title screen
 Title "Modern Mathematics Game"

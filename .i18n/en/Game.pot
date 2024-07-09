@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Jul  8 21:43:42 2024\n"
+"POT-Creation-Date: Tue Jul  9 15:55:56 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,100 +20,314 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "Hello World"
+#: Game.Levels.GroupDefinition.L01_mul_one
+msgid "Multiplicative identity"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This text is shown as first message when the level is played.\n"
-"You can insert hints in the proof below. They will appear in this side panel\n"
-"depending on the proof a user provides."
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You can either start using `«{h}»` or `«{g}»`."
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use `«{h}»` now."
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use `«{g}»` now."
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This last message appears if the level is solved."
-msgstr ""
-
-#: Game.Levels.DemoWorld
-msgid "Demo World"
-msgstr ""
-
-#: Game.Levels.DemoWorld
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
-msgstr ""
-
-#: Game.Levels.Equations.L01_Rfl
-msgid "Reflexivity"
-msgstr ""
-
-#: Game.Levels.Equations.L01_Rfl
-msgid "The `rfl` principle (short for reflexivity) can be used to prove any statement of the form\n"
-"`?X = ?X`. Here, I use `?X` to stand in for any expression of any type.\n"
-"It could be `8 + 9` or `a * b` or `\"adele\"` or whatever.\n"
+#: Game.Levels.GroupDefinition.L01_mul_one
+msgid "A group $G$ is a set together with an operation $*$ and a distinguished element $1$, not\n"
+"necessarily the same as the natural number $1$, that satisfies certain properties. We'll introduce\n"
+"these properties in the next few levels. The first property, called `mul_one` asserts that\n"
+"$a * 1 = a$.\n"
 "\n"
-"Below, you are asked to prove `x + y = x + y`, where `x` and `y` are natural numbers.\n"
-"The word `sorry` between the `begin` and `end` lines below asks Lean not to give an error message if a\n"
-"proof isn't complete. You'll see a <span style=\"color:orange\">warning</span> message in the\n"
-"bottom-right hand pane. This indicates you shouldn't trust the proof just yet, as it uses `sorry`!\n"
+"To complete this level, just enter `rw [mul_one]` in the box in the middle pane.\n"
 "\n"
-"Delete `sorry` (using the backspace key on your keyboard). In the right-hand pane you'll see:\n"
+"*Note* `rw` is am abbreviation for the `rewrite` tactic. We use it to rewrite the target\n"
+"`a * 1 = a` to the target `a = a` and thereby complete the proof."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L01_mul_one
+msgid "`rw` is used to rewrite the target or a hypothesis\n"
+"\n"
+"If `h` is the name of a theorem `rw [h]` rewrites the target using `h`. For example, if `h` is\n"
+"the theroem `a = b`, then `rw [h]` causes every instance of `a` in the target to be replaced with\n"
+"`b`."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L01_mul_one
+msgid "`mul_one` is a proof that `a * 1 = a`"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L01_mul_one
+msgid "Let $a$ be an element of $G$. Show that $a * 1 = a$."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L01_mul_one
+msgid "Enter `rw [mul_one]` in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L01_mul_one
+msgid "Great, you've just used the right identity property of groups. We'll learn the left identity property\n"
+"in the next level."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "Multiplicative identity on the left"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "In the previous level, we saw that $a * 1 = a$ for every $a$ in a group $G$. In this level, we\n"
+"introduce the property that $1 * a = a$, for every $a$ in $G$."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "`one_mul` is a proof that `1 * a = a`"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "Let $a$ be an element of $G$. Show that $1 * (a * 1) = a$."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "Enter `rw [mul_one]` or `rw [one_mul]` in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "Enter `rw [one_mul]` in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "Enter `rw [mul_one]` in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L02_one_mul
+msgid "I asked you to perform rewrites on two separate lines. But these rewrites can be combined on one\n"
+"line as `rw [mul_one, one_mul]`.\n"
+"\n"
+"In the next level, we'll learn another property of groups."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L03_mul_assoc
+msgid "Multiplicative associativity"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L03_mul_assoc
+msgid "Brackets can be shifted in a group. This property is called associativity. In Lean, `mul_assoc`\n"
+"is the theorem that $(a*b)*c = a*(b*c)$."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L03_mul_assoc
+msgid "`mul_assoc` is a proof that `(a * b) * c = a * (b * c)`\n"
+"\n"
+"Note that Lean will write `(a * b) * c` as `a * b * c` to minimise the use of brackets."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L03_mul_assoc
+msgid "Let $a, b, c$ be elements of $G$. Show that $(a * b) * (b * c) = (a * (b * b)) * c$."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L03_mul_assoc
+msgid "You'll need several rewrites, which can be done all on one line."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L03_mul_assoc
+msgid "Almost there. Just one more property!"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
+msgid "Left inverse"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
+msgid "The left inverse $a^{-1}$ of a group element $a$ satisfies the property that $a^{-1} * a = 1$.\n"
+"This property is `mul_left_inv`, the left multiplicative inverse.\n"
+"\n"
+"*Note* to enter `⁻¹` in Lean, type `\\-1`."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
+msgid "`mul_left_inv` is a proof that `a⁻¹ * a = 1`"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
+msgid "Let $a, b, c$ be elements of $G$. Show that $(a^{-1} * (b^{-1} * b)) * a = 1 $."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
+msgid "Try rewriting with `mul_left_inv`"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
+msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an\n"
+"appropriate multiplicative identity rule"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
+msgid "Excellent. You've now seen all the defining properties of a group.\n"
+"Click \"Leave World\" below to leave the Group Definition world and move on to the\n"
+"next world."
+msgstr ""
+
+#: Game.Levels.GroupDefinition
+msgid "Group Definition"
+msgstr ""
+
+#: Game.Levels.GroupDefinition
+msgid "In this world, we introduce the definition of a group.\n"
+"\n"
+"Click on \"Start\" below to begin."
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "Uniqueness of identity"
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "We'll show that the identity is unique. That is, we'll prove:\n"
+"\n"
+"**Theorem** Suppose $b$ is an element of $G$ such that $b * a = a$,\n"
+"for every $a$ in $G$. Then $b = 1$.\n"
+"\n"
+"We'll use the following 'traditional' mathematics proof as a template.\n"
+"\n"
+"**Proof**\n"
+"$$\n"
+"\\begin{align*}\n"
+"b & = b * 1 && [\\text{by identity property}] \\\\\n"
+"  & = 1.     && [\\text{by the hypothesis}]\n"
+"\\end{align*}\n"
+"$$\n"
+"\n"
+"You'll work on the entire proof file in this level, rather than writing a proof\n"
+"a line-at-a-time. In the pane on the right, replace each `sorry` with an appropriate\n"
+"rewrite.\n"
+"\n"
+"*Note* to rewrite with the hypothesis `h`, use `rw [h]`."
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "`calc` is used to write a 'calculation-style' proof"
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "`Template` for internal use"
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "`Hole` for internal use"
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "`eq_one_of_self_mul_eq (b : G) h` is the proof of `b = 1` if `h` is the hypothesis\n"
+"`h :  ∀ (a : G), b * a = a`.\n"
+"\n"
+"This is uniqueness of (left) identity in a group."
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that\n"
+"$b * a = a$. Call this assumption $h$. Then $b = 1$."
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
+msgid "Well done!"
+msgstr ""
+
+#: Game.Levels.Basics.L02_inv_inv
+msgid "Inverse of inverse"
+msgstr ""
+
+#: Game.Levels.Basics.L02_inv_inv
+msgid "In this level, you'll use a `calc` proof to show $(a^{-1})^{-1} = a$, for every\n"
+"$a$ in a group $G$.\n"
+"\n"
+"**Remember** enter `\\-1` to produce `⁻¹`.\n"
+"\n"
+"You will need to add more lines of the calculation. Each line should take the form\n"
+"`_ = expr := by rw [fact]`, where `fact` is the name of the definition or theorem you are using\n"
+"and `expr` is some mathematical expression."
+msgstr ""
+
+#: Game.Levels.Basics.L02_inv_inv
+msgid "`inv_inv (b : G) h` is the proof of `b = 1` if `h` is the hypothesis\n"
+"`h :  ∀ (a : G), b * a = a`.\n"
+"\n"
+"This is uniqueness of (left) identity in a group."
+msgstr ""
+
+#: Game.Levels.Basics.L02_inv_inv
+msgid "For every eleement $a$ in a group $G$, we have $(a^{-1})^{-1} = a$."
+msgstr ""
+
+#: Game.Levels.Basics.L02_inv_inv
+msgid "Excellent!"
+msgstr ""
+
+#: Game.Levels.Basics.L03_mul_right_inv
+msgid "Right inverse"
+msgstr ""
+
+#: Game.Levels.Basics.L03_mul_right_inv
+msgid "We've seen that $a^{-1} * a = 1$. In this level, you'll prove that $a * a^{-1} = 1$.\n"
+"\n"
+"Below is a template proof. Replace the `sorry` in the editor pane with this template.\n"
+"To complete the proof, fill in the `sorry` placeholders.\n"
+"\n"
 "```\n"
-"x y : ℕ\n"
-"⊢ x + y = x + y\n"
+"calc\n"
+"  a * a⁻¹ = sorry   := by sorry\n"
+"  _ = 1         := by sorry\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Basics.L03_mul_right_inv
+msgid "`mul_right_inv (a : G)` is the proof that `a * a⁻¹ = 1`.\n"
+"\n"
+"This is right inverse property"
+msgstr ""
+
+#: Game.Levels.Basics.L03_mul_right_inv
+msgid "Let $a$ be an element of a group $G$. Then $a * a^{-1} = 1$."
+msgstr ""
+
+#: Game.Levels.Basics.L03_mul_right_inv
+msgid "Excellent!"
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "Uniqueness of inverse"
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "In a previous level, you showed uniqueness of identity. Now we will show uniqueness of inverses.\n"
+"\n"
+"That is, you've prove that if $a * b = 1$ then $a^{-1} = b$.\n"
+"\n"
+"Below is a template proof. Replace the `sorry` in the editor pane with this template.\n"
+"To complete the proof, fill in the `sorry` placeholders.\n"
+"\n"
 "```\n"
+"calc\n"
+"  a⁻¹ = sorry   := by sorry\n"
+"  _ =  sorry    := by sorry\n"
+"  _ =  sorry    := by sorry\n"
+"  _ =  sorry    := by sorry\n"
+"  _ = b         := by sorry\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "`inv_eq_of_mul_eq_one (h : a * b = 1)` is the proof that `a⁻¹ = b`.\n"
 "\n"
-"Here, `x y : ℕ` is the *context*, the set of things you know. In this case, you know `x` and `y`\n"
-"are natural numbers.\n"
+"This is the uniqueness of inverses."
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "Let $a$ be an element of a group $G$. Then $a * a^{-1} = 1$."
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "Excellent!"
+msgstr ""
+
+#: Game.Levels.Basics
+msgid "Group Basics"
+msgstr ""
+
+#: Game.Levels.Basics
+msgid "We introduce calculation-style proofs and use them to demonstrate some basic group properties.\n"
 "\n"
-"The *target* is `⊢ x + y = x + y`. The `⊢` symbol can be read 'to prove'. So your target is\n"
-"to prove `x + y = x + y`.\n"
-"\n"
-"The bottom part of the right-hand pane shows an <span style=\"color:red\">error</span>  message:\n"
-"tactic failed, there are unsolved goals. Don't panic! It's just telling you that you haven't yet\n"
-"proved the result.\n"
-"\n"
-"Your task is to replace `sorry` with `from rfl,`. Note the comma at the end of the line!\n"
-"If you're successful, Lean will respond with the message `no goals` or `Proof complete!`\n"
-"\n"
-"In `from rfl`, the word `from` is a *tactic*. This tactic takes a proof term and closes a goal\n"
-"if the provided proof term exactly matches the target. The list of tactics you've seen so far\n"
-"is presented in the left-hand pane."
-msgstr ""
-
-#: Game.Levels.Equations.L01_Rfl
-msgid "You can either start using `«{h}»` or `«{g}»`."
-msgstr ""
-
-#: Game.Levels.Equations.L01_Rfl
-msgid "You should use `«{h}»` now."
-msgstr ""
-
-#: Game.Levels.Equations.L01_Rfl
-msgid "You should use `«{g}»` now."
-msgstr ""
-
-#: Game.Levels.Equations.L01_Rfl
-msgid "This last message appears if the level is solved."
-msgstr ""
-
-#: Game.Levels.Equations
-msgid "Equations World"
-msgstr ""
-
-#: Game.Levels.Equations
-msgid "This world introduces the concept of equality"
+"Click on \"Start\" below to begin."
 msgstr ""
 
 #: Game
