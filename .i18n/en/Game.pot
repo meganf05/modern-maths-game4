@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Jul  9 15:13:10 2024\n"
+"POT-Creation-Date: Tue Jul  9 22:12:34 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -153,9 +153,42 @@ msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an
 msgstr ""
 
 #: Game.Levels.GroupDefinition.L04_mul_left_inv
-msgid "Excellent. You've now seen all the defining properties of a group.\n"
+msgid "Great, you've just used the left multiplicative inverse. We'll learn the left multiplicative inverse\n"
+"in the next level.\n"
 "Click \"Leave World\" below to leave the Group Definition world and move on to the\n"
 "next world."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L05_mul_right_inv
+msgid "Right inverse"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L05_mul_right_inv
+msgid "The right inverse $b^{-1}$ of a group element $b$ satisfies the property that $b * b^{-1} = 1$.\n"
+"This property is  `mul_right_inv`, the right multiplicative inverse.\n"
+"\n"
+"*Note* to enter `⁻¹` in Lean, type `\\-1`."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L05_mul_right_inv
+msgid "`mul_right_inv` is a proof that `b * b⁻¹  = 1`"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L05_mul_right_inv
+msgid "Let $a, b, c$ be elements of $G$. Show that $(b^{-1} * (a^{-1} * a)) * b = 1 $."
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L05_mul_right_inv
+msgid "Try rewriting with `mul_right_inv`"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L05_mul_right_inv
+msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an\n"
+"appropriate multiplicative identity rule"
+msgstr ""
+
+#: Game.Levels.GroupDefinition.L05_mul_right_inv
+msgid "Excellent. Well done! Click for the next level."
 msgstr ""
 
 #: Game.Levels.GroupDefinition

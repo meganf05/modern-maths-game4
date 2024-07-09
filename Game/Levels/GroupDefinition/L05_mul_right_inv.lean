@@ -25,7 +25,7 @@ open Group
 
 variable {G : Type} [Group G]
 
-/-- Let $a, b, c$ be elements of $G$. Show that $(b^{-1} * (a^{-1} * a)) * b = 1 $. -/
+/-- Let $a, b, c$ be elements of $G$. Show that $(b * (a^{-1} * a)) * b^{-1} = 1 $. -/
 Statement (a b : G) : (b * (a * a⁻¹)) * b⁻¹ = 1 := by
 Hint (hidden := true) "Try rewriting with `mul_right_inv`"
 rw [mul_right_inv]
