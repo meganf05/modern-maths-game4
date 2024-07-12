@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Jul  9 22:12:34 2024\n"
+"POT-Creation-Date: Fri Jul 12 19:15:36 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -175,7 +175,7 @@ msgid "`mul_right_inv` is a proof that `b * b⁻¹  = 1`"
 msgstr ""
 
 #: Game.Levels.GroupDefinition.L05_mul_right_inv
-msgid "Let $a, b, c$ be elements of $G$. Show that $(b^{-1} * (a^{-1} * a)) * b = 1 $."
+msgid "Let $a, b, c$ be elements of $G$. Show that $(b * (a^{-1} * a)) * b^{-1} = 1 $."
 msgstr ""
 
 #: Game.Levels.GroupDefinition.L05_mul_right_inv
