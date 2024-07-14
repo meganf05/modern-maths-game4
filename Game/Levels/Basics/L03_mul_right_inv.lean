@@ -7,7 +7,7 @@ Level 3
 Title "Right inverse"
 
 Introduction "
-We've seen that $a^{-1} * a = 1$. In this level, you'll prove that $a * a^{-1} = 1$.
+We've seen that $a^{-1} * a = 1$ and $a * a^{-1} = 1$. But in this level you'll prove that $a * a^{-1} = 1$ by calculation.
 
 Below is a template proof. Replace the `sorry` in the editor pane with this template.
 To complete the proof, fill in the `sorry` placeholders.
