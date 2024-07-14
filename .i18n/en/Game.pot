@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Jul 12 19:15:36 2024\n"
+"POT-Creation-Date: Sun Jul 14 16:19:07 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -184,7 +184,7 @@ msgstr ""
 
 #: Game.Levels.GroupDefinition.L05_mul_right_inv
 msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an\n"
-"appropriate multiplicative identity rule"
+"appropriate multiplicative identity rule."
 msgstr ""
 
 #: Game.Levels.GroupDefinition.L05_mul_right_inv
@@ -291,7 +291,7 @@ msgid "Right inverse"
 msgstr ""
 
 #: Game.Levels.Basics.L03_mul_right_inv
-msgid "We've seen that $a^{-1} * a = 1$. In this level, you'll prove that $a * a^{-1} = 1$.\n"
+msgid "We've seen that $a^{-1} * a = 1$ and $a * a^{-1} = 1$. But in this level you'll prove that $a * a^{-1} = 1$ by calculation.\n"
 "\n"
 "Below is a template proof. Replace the `sorry` in the editor pane with this template.\n"
 "To complete the proof, fill in the `sorry` placeholders.\n"
@@ -385,7 +385,7 @@ msgid "This is an interactive book aimed at beginning mathematics undergraduates
 msgstr ""
 
 #: Game
-msgid "This game is part of the [exlean](https://exlean.org/) project."
+msgid "This game is part of the [exlean](https://exlean.org/) project. Use [Proof Guide](https://chatgpt.com/g/g-sbJfmQ6te-proof-guide) to help!"
 msgstr ""
 
 #: Game

@@ -22,7 +22,7 @@ Each tactic may invoke one or more *theorems*.
 "
 
 Info "
-This game is part of the [exlean](https://exlean.org/) project.
+This game is part of the [exlean](https://exlean.org/) project. Use [Proof Guide](https://chatgpt.com/g/g-sbJfmQ6te-proof-guide) to help!
 "
 
 /-! Information to be displayed on the servers landing page. -/
