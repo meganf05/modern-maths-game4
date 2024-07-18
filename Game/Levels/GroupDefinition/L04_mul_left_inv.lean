@@ -30,7 +30,7 @@ Statement (a b : G) : (a⁻¹ * (b⁻¹ * b)) * a = 1 := by
   Hint (hidden := true) "Try rewriting with `mul_left_inv`"
   rw [mul_left_inv]
   Hint (hidden := true) "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an
-  appropriate multiplicative identity rule"
+  appropriate multiplicative identity rule. Not sure how to continue? Use [Proof Guide](https://chatgpt.com/g/g-sbJfmQ6te-proof-guide) to help!"
   rw [mul_one]
   rw [mul_left_inv]
 
